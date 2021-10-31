@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import './App.css'
+import PostContainer from './components/PostContainer'
 import { useAppDispatch, useAppSelector } from './hooks/redux'
 import { fetchUsers } from './store/reducers/ActionCreators'
 
@@ -15,7 +16,8 @@ function App() {
         <div className='App'>
             {isLoading && <h1>Loading...</h1>}
             {error && <h1>Error: {error}</h1>}
-            {JSON.stringify(users, null, 2)}
+            <pre>{JSON.stringify(users, null, 2)}</pre>
+            <PostContainer />
         </div>
     )
 }
