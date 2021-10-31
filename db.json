@@ -1,0 +1,23 @@
+{
+  "posts": [
+    {
+      "title": "Edited title new",
+      "body": "Fresh news",
+      "id": 3
+    },
+    {
+      "title": "hello world edited.",
+      "body": "hello world",
+      "id": 5
+    },
+    {
+      "title": "Test post edited",
+      "body": "Test post",
+      "id": 6
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
