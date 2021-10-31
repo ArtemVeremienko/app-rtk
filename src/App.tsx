@@ -16,7 +16,11 @@ function App() {
         <div className='App'>
             {isLoading && <h1>Loading...</h1>}
             {error && <h1>Error: {error}</h1>}
-            <pre>{JSON.stringify(users, null, 2)}</pre>
+            <ul>
+                {users?.map((user) => (
+                    <li>{user.name}</li>
+                ))}
+            </ul>
             <PostContainer />
         </div>
     )
